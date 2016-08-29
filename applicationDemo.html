@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="us" ng-app="entryApp">
+<head>
+	<meta charset="utf-8">
+	<title>Github User Sign-up</title>
+        <link rel="shortcut icon" href="images/favicon.ico">
+	<script src="Script/jquery-3.1.0.js"></script>
+
+        <link href="bootstrap-3.1.1/dist/css/slider.css" rel="stylesheet">
+	<link href="bootstrap-3.1.1/dist/css/bootstrap.css" rel="stylesheet">
+        <link href="bootstrap-3.1.1/dist/css/bootstrap-theme.css" rel="stylesheet">
+     	<script src="bootstrap-3.1.1/dist/js/bootstrap.js"></script>
+        <script src="bootstrap-3.1.1/dist/js/bootstrap-slider.js"></script>
+
+
+	
+
+</head>
+<body data-ng-controller="entryCtrl" style="padding:9px;">
+<!-- Header Section -->
+<p>Test Data being stringafied and sent to MongoDB Should appear below:</p>
+{{profile.firstName}}
+
+{{profile.lastName}}
+{{profile.userEmail}}
+{{profile.posTyp}}
+{{profile.empDate}}
+{{profile.govCont}}
+{{profile.contName}}
+{{profile.coder}}
+{{profile.coderDes}}
+{{profile.proCoder}}
+{{profile.proCoderDes}}
+
+<h1><img src="images/1086321.png" alt="Smiley face" width="75" height="75">GitLab User Application</h1>
+  
+<form class="form-USR">
+    
+  <div><FORM-USR>
+
+    <h2>User Information: Please Enter information below:</h2>
+
+	<div class="form-USR">
+          <label for="post">Enter your employment date?</label>          
+          <input type="date" id="empDate" name="empDate" ng-model="profile.empDate"
+            placeholder="yyyy-MM-dd" min="1900-01-01" max="2016-12-31" required />
+        <div role="alert">
+        <span class="error" ng-show="myForm.input.$error.required">
+            Required!</span>
+        <span class="error" ng-show="myForm.input.$error.date">
+            Not a valid date!</span>
+           </div>
+        </div>
+
+        <div class="form-USR col-md-6"> 
+          <label for="uName">Enter your first name?</label>
+          <input ng-model="profile.firstName" type="text" class="form-control" id="firstName" placeholder="First Name"  autofocus autocomplete="on">
+	</div>
+
+	<div class="form-USR col-md-6">
+	  <label for="uName">Enter your last name?</label>
+          <input ng-model="profile.lastName" class="form-control" id="lastName" placeholder="Last Name"   autocomplete="on">          
+        </div>
+
+       <div class="form-USR col-md-6">
+          <label for="userEmail">Enter your email address?</label>
+          <input ng-model="profile.userEmail" type="email"class="form-control" id="userEmail" placeholder="Email address" >
+          <span class="help-block"></span>
+        </div>
+      
+    	<div class="form-USR col-md-6">
+          <label for="post">Enter your Position?</label>          
+          <input ng-model="profile.posTyp" class="form-control" id="posTyp" placeholder="Position with State" autocomplete="on">
+          <span class="help-block"></span>
+        </div>        
+
+        <div class="form-USR col-md-6">
+          <label for="post">Employee or Contractor?</label>          
+          <input ng-model="profile.govCont" class="form-control" id="govCont" placeholder="Government / Contractor" autocomplete="on">
+          <span class="help-block"></span>
+        </div>
+
+        <div class="form-USR col-md-6">
+          <label for="post">If contractor list for whom?</label>          
+          <input ng-model="profile.contName" class="form-control" id="contName" placeholder="company" autocomplete="on">
+          <span class="help-block"></span>
+        </div>
+
+
+<h3>Summary of qualifications:</h3>
+	<div class="form-USR">
+	<label for="proCode">I have written code or been involved in IT (either personally or professionally)? </label>
+    	<input id="coder" type="checkbox" ng-model="profile.coder"
+           ng-true-value="Yes" ng-false-value="No"/>    	
+     	</div>
+
+        <!--<div class="form-USR"> 
+          <label for="post">Have you ever written code or been involved in IT (either personally or professionally)?</label>
+          <input ng-model="profile.coder" class="form-control" id="coder" placeholder="Yes / No" autocomplete="on">          
+          <span class="help-block"></span>
+        </div>-->
+
+        <div class="form-USR"> 
+          <label for="post">Please describe?</label>
+          <input ng-model="profile.coderDes" class="form-control" id="post" placeholder="Add Details" autocomplete="on">
+          <span class="help-block"></span> 
+        </div>
+
+	<div class="form-USR">
+	<label for="proCode">I have you developed code, scripts, or other IT solutions for use on or with CA systems? </label>
+    	<input id="proCoder" type="checkbox" ng-model="profile.proCoder"
+           ng-true-value="Yes" ng-false-value="No"/>    	
+     	</div>
+
+	<!--<div class="form-USR"> 
+          <label for="post">Have you ever developed code, scripts, or other IT solutions for use on or with CA systems?</label>
+          <input ng-model="profile.proCoder" class="form-control" id="proCoder" placeholder="Yes / No" autocomplete="on">          
+          <span class="help-block"></span>
+        </div>-->
+
+        <div class="form-USR"> 
+          <label for="post">Please describe?</label>
+          <input ng-model="profile.proCoderDes" class="form-control" id="proCoderDes" placeholder="Add Details" autocomplete="on">
+          <span class="help-block"></span> 
+        </div>
+
+	<div class="form-USR">
+	<label for="cmExp">I have experience with GitHub, GitLab, open source communities or version control software? </label>
+    	<input id="cmExp" type="checkbox" ng-model="profile.cmExp"
+           ng-true-value="Yes" ng-false-value="No"/>    	
+     	</div>
+
+	<!--<div class="form-USR"> 
+          <label for="post">I have experience with GitHub, GitLab, open source communities or version control software?</label>
+          <input ng-model="profile.cmExp" class="form-control" id="cmExp" placeholder="Yes / No" autocomplete="on">          
+          <span class="help-block"></span>
+        </div>-->
+
+        <div class="form-USR"> 
+          <label for="post">Please describe?</label>
+          <input ng-model="profile.cmExpDes" class="form-control" id="cmExpDes" placeholder="Add Details" autocomplete="on">
+          <span class="help-block"></span> 
+        </div>
+	
+   </div>
+
+<div class="form-USR">
+      
+        <button class="btn btn-lg btn-primary" ng-click="postData();" >Submit Data </button>
+        <button class="btn btn-lg btn-primary"onClick="history.go(0)"type="Clear">Reset Form Data</button>
+
+      </form>
+<p>This application grants you a renewable 24 month license to access CA&#39s GitLab. Your access is at will and can be revoked at any time by CA, most likely due to either improper use of GitLab or lack of constructive activity.</p>    
+      
+</div>
+
+
+        <script src="Script/angular.min.js" type="text/javascript"></script>        
+        <script src="Script/entryApp.js"></script>
+
+
+</body>
+</html>
+
