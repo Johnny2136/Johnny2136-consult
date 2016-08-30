@@ -1,26 +1,27 @@
-## Ani Theme rewritten in Meteor.js + Angular 
+# [Start Bootstrap](http://startbootstrap.com/) - [Freelancer](http://startbootstrap.com/template-overviews/freelancer/)
 
-This project is a port of the famous [Free Ani AngularJS Theme](http://startangular.com/product/ani-theme/) to Meteor.js plus angular Theme.
+[Freelancer](http://startbootstrap.com/template-overviews/freelancer/) is a one page freelancer portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, and a working PHP contact form.
 
-## Installation
-####1. Clone this project or Download that ZIP file
+## Getting Started
 
-```sh
-$ git clone https://github.com/start-meteorjs/ani-theme-angular-meteor.git
-```
+To begin using this template, choose one of the following options to get started:
+* [Download the latest release on Start Bootstrap](http://startbootstrap.com/template-overviews/freelancer/)
+* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-freelancer.git`
+* Fork the repo
 
-####2.  Make sure you have [meteor](https://www.meteor.com/) installed globally
+## Bugs and Issues
 
+Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-freelancer/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/freelancer/).
 
-####3. On the command prompt run the following commands
+## Creator
 
-```sh
-$ cd `project-directory`
-```
-```sh
-$ meteor 
-```
+Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
 
-## Description
+* https://twitter.com/davidmillerskt
+* https://github.com/davidtmiller
 
-This theme is developed using the angular-meteor package to integrate angular as the reactive front-end.
+Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+
+## Copyright and License
+
+Copyright 2013-2016 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/gh-pages/LICENSE) license.
